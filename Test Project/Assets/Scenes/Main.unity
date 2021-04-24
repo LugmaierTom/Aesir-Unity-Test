@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 124748514}
   m_Layer: 6
   m_Name: Hex-Field (2)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 219586809}
   m_Layer: 6
   m_Name: Hex-Field (24)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 236454685}
   m_Layer: 6
   m_Name: Hex-Field (5)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 275066549}
   m_Layer: 6
   m_Name: Hex-Field (34)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 401319877}
   m_Layer: 6
   m_Name: Hex-Field (36)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 426595853}
   m_Layer: 6
   m_Name: Hex-Field (1)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -801,7 +801,7 @@ GameObject:
   - component: {fileID: 432656841}
   m_Layer: 6
   m_Name: Hex-Field (39)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -883,7 +883,7 @@ GameObject:
   - component: {fileID: 434553592}
   m_Layer: 6
   m_Name: Hex-Field (12)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 476468450}
   m_Layer: 6
   m_Name: Hex-Field (8)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 502000772}
   m_Layer: 6
   m_Name: Hex-Field (16)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1386,7 +1386,7 @@ GameObject:
   - component: {fileID: 687883176}
   m_Layer: 6
   m_Name: Hex-Field (41)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1468,7 +1468,7 @@ GameObject:
   - component: {fileID: 689391524}
   m_Layer: 6
   m_Name: Hex-Field (30)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 743166462}
   m_Layer: 6
   m_Name: Hex-Field (19)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 768765068}
   m_Layer: 6
   m_Name: Hex-Field (7)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1714,7 +1714,7 @@ GameObject:
   - component: {fileID: 796347722}
   m_Layer: 6
   m_Name: Hex-Field (38)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1796,7 +1796,7 @@ GameObject:
   - component: {fileID: 813698248}
   m_Layer: 6
   m_Name: Hex-Field (13)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1965,7 +1965,7 @@ GameObject:
   - component: {fileID: 881415880}
   m_Layer: 6
   m_Name: Hex-Field (27)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2114,7 +2114,7 @@ GameObject:
   - component: {fileID: 933043719}
   m_Layer: 6
   m_Name: Hex-Field (37)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2196,7 +2196,7 @@ GameObject:
   - component: {fileID: 940692955}
   m_Layer: 6
   m_Name: Hex-Field (21)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2335,7 +2335,7 @@ GameObject:
   - component: {fileID: 971123294}
   m_Layer: 6
   m_Name: Hex-Field (22)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2417,7 +2417,7 @@ GameObject:
   - component: {fileID: 1014166566}
   m_Layer: 6
   m_Name: Hex-Field (17)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2529,7 +2529,7 @@ GameObject:
   - component: {fileID: 1074755317}
   m_Layer: 6
   m_Name: Hex-Field (29)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2611,7 +2611,7 @@ GameObject:
   - component: {fileID: 1096490003}
   m_Layer: 6
   m_Name: Hex-Field (10)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2693,7 +2693,7 @@ GameObject:
   - component: {fileID: 1169718556}
   m_Layer: 6
   m_Name: Hex-Field (35)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2775,7 +2775,7 @@ GameObject:
   - component: {fileID: 1192014146}
   m_Layer: 6
   m_Name: Hex-Field (18)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2857,7 +2857,7 @@ GameObject:
   - component: {fileID: 1192353490}
   m_Layer: 6
   m_Name: Hex-Field (9)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2939,7 +2939,7 @@ GameObject:
   - component: {fileID: 1216774201}
   m_Layer: 6
   m_Name: Hex-Field (20)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3093,7 +3093,7 @@ GameObject:
   - component: {fileID: 1305598804}
   m_Layer: 6
   m_Name: Hex-Field (25)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3175,7 +3175,7 @@ GameObject:
   - component: {fileID: 1452604111}
   m_Layer: 6
   m_Name: Hex-Field (6)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3294,7 +3294,7 @@ GameObject:
   - component: {fileID: 1484317472}
   m_Layer: 6
   m_Name: Hex-Field (15)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3376,7 +3376,7 @@ GameObject:
   - component: {fileID: 1484563916}
   m_Layer: 6
   m_Name: Hex-Field (28)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3458,7 +3458,7 @@ GameObject:
   - component: {fileID: 1541390173}
   m_Layer: 6
   m_Name: Hex-Field (14)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3639,7 +3639,7 @@ GameObject:
   - component: {fileID: 1566154470}
   m_Layer: 6
   m_Name: Hex-Field (33)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3721,7 +3721,7 @@ GameObject:
   - component: {fileID: 1571766836}
   m_Layer: 6
   m_Name: Hex-Field (31)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3803,7 +3803,7 @@ GameObject:
   - component: {fileID: 1603608340}
   m_Layer: 6
   m_Name: Hex-Field (40)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3914,6 +3914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665150134}
   - component: {fileID: 1665150133}
+  - component: {fileID: 1665150135}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3933,7 +3934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180d63cc1ecca22439c281527779e69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameFieldHeight: 0
+  _gameFieldHeight: 6
+  _instatiatedObjects: []
   _spawnRate: 0.2
   _itemSpawnPositions:
   - {fileID: 449922718}
@@ -3962,6 +3964,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1665150135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665150132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4e90c261387ef4e997541546887383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  _selectionRange: 2.5
 --- !u!1 &1755915826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3974,7 +3990,7 @@ GameObject:
   - component: {fileID: 1755915828}
   m_Layer: 6
   m_Name: Hex-Field (3)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4056,7 +4072,7 @@ GameObject:
   - component: {fileID: 1770931038}
   m_Layer: 6
   m_Name: Hex-Field (4)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4138,7 +4154,7 @@ GameObject:
   - component: {fileID: 1820221505}
   m_Layer: 6
   m_Name: Hex-Field (32)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4220,7 +4236,7 @@ GameObject:
   - component: {fileID: 1825332084}
   m_Layer: 6
   m_Name: Hex-Field (26)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4425,7 +4441,7 @@ GameObject:
   - component: {fileID: 2044577420}
   m_Layer: 6
   m_Name: Hex-Field (23)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4507,7 +4523,7 @@ GameObject:
   - component: {fileID: 2071679497}
   m_Layer: 6
   m_Name: Hex-Field
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4589,7 +4605,7 @@ GameObject:
   - component: {fileID: 2110453375}
   m_Layer: 6
   m_Name: Hex-Field (11)
-  m_TagString: HexField
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

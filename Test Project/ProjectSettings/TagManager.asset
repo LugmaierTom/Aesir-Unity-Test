@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - HexField
+  - Blue
+  - Green
+  - Red
+  - Yellow
   layers:
   - Default
   - TransparentFX

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2756222859027632505}
   - component: {fileID: 4574401221527785647}
   - component: {fileID: 7535494142498179530}
+  - component: {fileID: -1743669944212343382}
   m_Layer: 0
   m_Name: Ball_blue
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,3 +132,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-1743669944212343382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2233793189968898761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2833684450a8b748b942e45817344c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
