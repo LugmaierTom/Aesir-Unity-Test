@@ -62,13 +62,22 @@ public class SelectionManager : MonoBehaviour
                 item._isSelected = true;
                 Debug.Log(_selectedItems.Count);
             }
-            else if (_currentSelection.tag == hit.transform.tag)
+            else if (isInRange(hit) && _currentSelection.tag == hit.transform.tag)
             {
                 _selectedItems.Add(hit.transform.gameObject);
                 item._isSelected = true;
                 Debug.Log(_selectedItems.Count);
             }
         }
+    }
+
+    private bool isInRange(RaycastHit2D hit)
+    {
+        float distance = Vector2.Distance(_currentSelection.transform.position, hit.transform.position);
+
+        if (distance < _selectionRange) return true;
+
+        return false;
     }
 
     private void UncheckItems()
