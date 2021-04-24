@@ -32,7 +32,7 @@ public class SelectionManager : MonoBehaviour
         
         if (Input.GetButtonUp("Fire1"))
         {
-            UncheckItems();
+            CheckRow();
             _selectedItems.Clear();
             _currentSelection = null;
         }
@@ -60,13 +60,12 @@ public class SelectionManager : MonoBehaviour
                 _currentSelection = hit.transform.gameObject;
                 _selectedItems.Add(hit.transform.gameObject);
                 item._isSelected = true;
-                Debug.Log(_selectedItems.Count);
             }
             else if (isInRange(hit) && _currentSelection.tag == hit.transform.tag)
             {
                 _selectedItems.Add(hit.transform.gameObject);
+                _currentSelection = hit.transform.gameObject;
                 item._isSelected = true;
-                Debug.Log(_selectedItems.Count);
             }
         }
     }
@@ -78,6 +77,21 @@ public class SelectionManager : MonoBehaviour
         if (distance < _selectionRange) return true;
 
         return false;
+    }
+
+    private void CheckRow()
+    {
+        if (_selectedItems.Count >= 3)
+        {
+            foreach (GameObject selected in _selectedItems)
+            {
+                Destroy(selected);
+            }
+        }
+        else
+        {
+            UncheckItems();
+        }
     }
 
     private void UncheckItems()
