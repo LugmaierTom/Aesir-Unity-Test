@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class SelectionManager : MonoBehaviour
 {
+    public delegate void MoveHandler(int score);
+    public event MoveHandler _MoveDone;
+
     [SerializeField] private Camera mainCamera;
     [SerializeField] private float _selectionRange;
     [SerializeField] private float _itemDestroyRate;
@@ -11,7 +14,7 @@ public class SelectionManager : MonoBehaviour
     private GameObject _currentSelection;
     private List<GameObject> _selectedItems;
     private List<GameObject> _itemList;
-    
+
 
     private void Awake()
     {
@@ -87,6 +90,7 @@ public class SelectionManager : MonoBehaviour
         {
             StopAllCoroutines();
             StartCoroutine("RemoveItems");
+            _MoveDone?.Invoke(_selectedItems.Count * 10);
         }
         else
         {

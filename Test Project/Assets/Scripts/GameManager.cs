@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     public delegate void DestroyHandler();
 
     public int _gameFieldHeight;
-    public List<GameObject> _instatiatedObjects;
     public SelectionManager _selectionManager;
+    public EndAfterXMoves _gameOverCondition;
 
     [Range(0.1f, 2f)] public float _spawnRate;
 
@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] _items;
 
     private int _idCount;
+    private List<GameObject> _instatiatedObjects;
 
 
     private void Awake()
@@ -24,28 +25,13 @@ public class GameManager : MonoBehaviour
         _instatiatedObjects = new List<GameObject>();
     }
 
-    // Start is called before the first frame update
+    
     void Start()
     {
+        _selectionManager._MoveDone += EndGame;
         StartCoroutine("InitialiseItems");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            PrintList();
-        }
-    }
-
-    private void PrintList()
-    {
-        foreach (GameObject clickable in _instatiatedObjects)
-        {
-            Debug.Log(clickable.GetComponent<IClickable>()._collumn);
-        }
-    }
 
     private IEnumerator InitialiseItems()
     {
@@ -56,7 +42,6 @@ public class GameManager : MonoBehaviour
             for (int k = 0; k < _itemSpawnPositions.Length; k++)
             {
                 SpawnNewItem(k);
-                //columns[k] = i + 1;
             }
 
             yield return waiting;
@@ -78,5 +63,10 @@ public class GameManager : MonoBehaviour
         instance.GetComponent<Item>().Destroyed += SpawnNewItem;
 
         _instatiatedObjects.Add(instance);
+    }
+
+    private void EndGame(int score)
+    {
+        _gameOverCondition.EndGame();
     }
 }
