@@ -6,9 +6,12 @@ public class SelectionManager : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
     [SerializeField] private float _selectionRange;
+    [SerializeField] private float _itemDestroyRate;
 
     private GameObject _currentSelection;
     private List<GameObject> _selectedItems;
+    private List<GameObject> _itemList;
+    
 
     private void Awake()
     {
@@ -17,11 +20,7 @@ public class SelectionManager : MonoBehaviour
 
         _selectedItems = new List<GameObject>();
     }
-    
-    void Start()
-    {
-        
-    }
+
 
     void Update()
     {
@@ -33,10 +32,10 @@ public class SelectionManager : MonoBehaviour
         if (Input.GetButtonUp("Fire1"))
         {
             CheckRow();
-            _selectedItems.Clear();
             _currentSelection = null;
         }
     }
+
 
     private void SelectItem()
     {
@@ -51,24 +50,26 @@ public class SelectionManager : MonoBehaviour
         CheckSelection(hit, item);
     }
 
+
     private void CheckSelection(RaycastHit2D hit, IClickable item)
     {
-        if (item != null && item._isSelected == false)
+        // If there is no item or it's already selected
+        if (item == null || item._isSelected == true) return;
+
+        if (_currentSelection == null)
         {
-            if (_currentSelection == null)
-            {
-                _currentSelection = hit.transform.gameObject;
-                _selectedItems.Add(hit.transform.gameObject);
-                item._isSelected = true;
-            }
-            else if (isInRange(hit) && _currentSelection.tag == hit.transform.tag)
-            {
-                _selectedItems.Add(hit.transform.gameObject);
-                _currentSelection = hit.transform.gameObject;
-                item._isSelected = true;
-            }
+            _currentSelection = hit.transform.gameObject;
+            _selectedItems.Add(hit.transform.gameObject);
+            item._isSelected = true;
+        }
+        else if (isInRange(hit) && _currentSelection.tag == hit.transform.tag)
+        {
+            _selectedItems.Add(hit.transform.gameObject);
+            _currentSelection = hit.transform.gameObject;
+            item._isSelected = true;
         }
     }
+
 
     private bool isInRange(RaycastHit2D hit)
     {
@@ -79,14 +80,13 @@ public class SelectionManager : MonoBehaviour
         return false;
     }
 
+
     private void CheckRow()
     {
         if (_selectedItems.Count >= 3)
         {
-            foreach (GameObject selected in _selectedItems)
-            {
-                Destroy(selected);
-            }
+            StopAllCoroutines();
+            StartCoroutine("RemoveItems");
         }
         else
         {
@@ -100,5 +100,34 @@ public class SelectionManager : MonoBehaviour
         {
             selected.GetComponent<IClickable>()._isSelected = false;
         }
+    }
+
+    private IEnumerator RemoveItems()
+    {
+        WaitForSeconds waiting = new WaitForSeconds(_itemDestroyRate);
+
+        foreach (GameObject selected in _selectedItems)
+        {
+            IClickable toFind = selected.GetComponent<IClickable>();
+            toFind.DestroyItem();
+
+            for (int i = 0; i < _itemList.Count; i++)
+            {
+                if (_itemList[i].GetComponent<IClickable>()._id == toFind._id)
+                {
+                    _itemList.RemoveAt(i);
+                    Destroy(selected);
+                }
+            }
+
+            yield return waiting;
+        }
+
+        _selectedItems.Clear();
+    }
+
+    public void SetItemList(List<GameObject> list)
+    {
+        _itemList = list;
     }
 }

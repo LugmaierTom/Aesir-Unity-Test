@@ -180,6 +180,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.2}
   m_EdgeRadius: 0
+--- !u!1 &107654167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107654169}
+  - component: {fileID: 107654168}
+  m_Layer: 0
+  m_Name: SelectionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &107654168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107654167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4e90c261387ef4e997541546887383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  _selectionRange: 2.5
+  _itemDestroyRate: 0.2
+--- !u!4 &107654169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107654167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37148017, y: -2.9705813, z: -7.952078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124748512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,7 +2116,7 @@ Transform:
   - {fileID: 422460693}
   - {fileID: 2129952435}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912957207
 GameObject:
@@ -3936,6 +3982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameFieldHeight: 6
   _instatiatedObjects: []
+  _selectionManager: {fileID: 107654168}
   _spawnRate: 0.2
   _itemSpawnPositions:
   - {fileID: 449922718}
@@ -3962,7 +4009,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1665150135
 MonoBehaviour:
@@ -3971,13 +4018,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665150132}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e4e90c261387ef4e997541546887383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
   _selectionRange: 2.5
+  _itemDestroyRate: 0.2
 --- !u!1 &1755915826
 GameObject:
   m_ObjectHideFlags: 0
