@@ -1,4 +1,4 @@
-using System;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,14 +7,14 @@ public class GameManager : MonoBehaviour
 {
     public delegate void DestroyHandler();
 
-    public int _gameFieldHeight;
-    public SelectionManager _selectionManager;
-    public EndAfterXMoves _gameOverCondition;
-
     [Range(0.1f, 2f)] public float _spawnRate;
 
+    [SerializeField] private int _gameFieldHeight;
+    [SerializeField] private SelectionManager _selectionManager;
+    [SerializeField] private EndAfterXMoves _gameOverCondition;
     [SerializeField] private GameObject[] _itemSpawnPositions;
     [SerializeField] private GameObject[] _items;
+    [SerializeField] private GameObject _endScreen;
 
     private int _idCount;
     private List<GameObject> _instatiatedObjects;
@@ -67,6 +67,14 @@ public class GameManager : MonoBehaviour
 
     private void EndGame(int score)
     {
-        _gameOverCondition.EndGame();
+       if (_gameOverCondition.EndGame())
+        {
+            _endScreen.SetActive(true);
+        }
+    }
+
+    private void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

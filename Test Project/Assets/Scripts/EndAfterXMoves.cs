@@ -1,22 +1,34 @@
 ﻿using UnityEngine;
+using TMPro;
 using System.Collections;
 
 public class EndAfterXMoves : MonoBehaviour, IEndCondition
 {
-    [SerializeField] private int _movesTillEnd;
+    [SerializeField] private int _movesLeft;
+    [SerializeField] TextMeshProUGUI _movesLeftText;
 
-    private void Awake()
+
+    private void Start()
     {
-        Debug.Log(_movesTillEnd);
+        _movesLeftText.text = $"Moves left: {_movesLeft}";
     }
 
-    public void EndGame()
+    public bool EndGame()
     {
-        _movesTillEnd--;
+        _movesLeft--;
+        _movesLeftText.text = $"Moves left: {_movesLeft}";
         
-        if (_movesTillEnd <= 0)
+        if (_movesLeft <= 0)
         {
-            Application.Quit();
+            return true;
         }
+
+        return false;
+    }
+
+
+    public int GetMovesLeft()
+    {
+        return _movesLeft;
     }
 }

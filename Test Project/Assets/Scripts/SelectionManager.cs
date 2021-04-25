@@ -61,15 +61,11 @@ public class SelectionManager : MonoBehaviour
 
         if (_currentSelection == null)
         {
-            _currentSelection = hit.transform.gameObject;
-            _selectedItems.Add(hit.transform.gameObject);
-            item._isSelected = true;
+            AddToSelection(hit, item);
         }
         else if (isInRange(hit) && _currentSelection.tag == hit.transform.tag)
         {
-            _selectedItems.Add(hit.transform.gameObject);
-            _currentSelection = hit.transform.gameObject;
-            item._isSelected = true;
+            AddToSelection(hit, item);
         }
     }
 
@@ -81,6 +77,14 @@ public class SelectionManager : MonoBehaviour
         if (distance < _selectionRange) return true;
 
         return false;
+    }
+
+
+    private void AddToSelection(RaycastHit2D hit, IClickable item)
+    {
+        _currentSelection = hit.transform.gameObject;
+        _selectedItems.Add(hit.transform.gameObject);
+        item._isSelected = true;
     }
 
 
