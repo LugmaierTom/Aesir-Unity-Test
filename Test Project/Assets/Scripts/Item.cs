@@ -3,22 +3,20 @@ using System.Collections;
 
 public class Item : MonoBehaviour, IClickable
 {
-    private GameObject _gameObject;
-
     public int _id { get; set; }
     public int _collumn { get; set; }
     public bool _isSelected { get; set; }
-
-    public delegate void DestroyHandler(int collumn);
-    public event DestroyHandler Destroyed;
+    
 
     private void Awake()
     {
-        _gameObject = this.gameObject;
+        _isSelected = false;
     }
 
-    public void DestroyItem()
+
+    public void SetItemProperties(int id, int collumn)
     {
-        Destroyed?.Invoke(_collumn);
+        _id = id;
+        _collumn = collumn;
     }
 }

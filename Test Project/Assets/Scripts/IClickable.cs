@@ -8,5 +8,5 @@ public interface IClickable
     int _collumn { get; set; }
     bool _isSelected { get; set; }
 
-    void DestroyItem();
+    void SetItemProperties(int id, int collumn);
 }

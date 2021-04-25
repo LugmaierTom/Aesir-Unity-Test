@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 
 public class Highscore : MonoBehaviour
@@ -8,21 +8,23 @@ public class Highscore : MonoBehaviour
     private TextMeshProUGUI _scoreText;
     private int _scoreCount;
 
+
     private void Awake()
     {
         _scoreText = this.GetComponent<TextMeshProUGUI>();
     }
 
-    // Use this for initialization
+
     void Start()
     {
         _selectionManager._MoveDone += UpdateScore;
         _scoreText.text = "Score: 0";
     }
 
-    private void UpdateScore(int score)
+
+    private void UpdateScore(List<GameObject> items)
     {
-        _scoreCount += score;
+        _scoreCount += (items.Count * 10);
         _scoreText.text = $"Score: {_scoreCount}";
     }
 }
